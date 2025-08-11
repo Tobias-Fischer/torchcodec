@@ -123,6 +123,7 @@ class CMakeBuild(build_ext):
             f"-DCMAKE_BUILD_TYPE={cmake_build_type}",
             f"-DPYTHON_VERSION={python_version.major}.{python_version.minor}",
             f"-DENABLE_CUDA={enable_cuda}",
+            "-DPYBIND_OPS_MODULE_NAME=core_pybind_ops"
             f"-DTORCHCODEC_DISABLE_COMPILE_WARNING_AS_ERROR={torchcodec_disable_compile_warning_as_error}",
         ]
 
